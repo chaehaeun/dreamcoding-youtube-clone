@@ -16,9 +16,9 @@ const RelatedVideos = ({ id }) => {
       {isLoading && <p>Loading...</p>}
       {error && <p>Something is wrong</p>}
       {videos && (
-        <ul className="">
+        <ul>
           {videos.map((video) => (
-            <VideoCard key={video.id} video={video} />
+            <VideoCard key={video.id} video={video} type="list" />
           ))}
         </ul>
       )}
