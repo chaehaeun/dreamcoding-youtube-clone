@@ -18,8 +18,7 @@ export default function VideoDetail() {
           type="text/html"
           className="w-full aspect-video"
           src={`http://www.youtube.com/embed/${video.id}`}
-          frameborder="0"
-        ></iframe>
+        />
         <div>
           <h2>{title}</h2>
           <ChannelInfo id={channelId} name={channelTitle} />
